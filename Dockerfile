@@ -1,4 +1,4 @@
-from node:6
+from node:8
 
 ADD . /StoreWebApp
 
