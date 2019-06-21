@@ -7,12 +7,11 @@ var bodyParser = require('body-parser');
 var session = require('express-session');
 
 var index = require('./routes/index');
+var images = require('./routes/images');
+var catalog = require('./routes/catalog');
+var customer = require('./routes/customer');
 
 var app = express();
-
-// view engine setup
-//app.set('views', path.join(__dirname, 'views'));
-//app.set('view engine', 'jade');
 
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
@@ -25,7 +24,10 @@ app.use('/', index);
 app.use('/', express.static('public/resources'));
 app.use('/', express.static('public/stylesheets'));
 app.use('/bower_components', express.static('bower_components'));
-app.use('/image', express.static('image'));
+app.use('/image', express.static('public/images'));
+app.use('/catalog', catalog);
+app.use('/customer', customer);
+app.use('/images', images);
 
 app.use(express.static(path.join(__dirname, 'public')));
 
