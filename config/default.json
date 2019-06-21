@@ -1,5 +1,9 @@
 {
-  "APIs": {  
+  "APIs": {
+  "catalog": {
+    "host": "lightblue-catalog-igarcia.mybluemix.net",
+    "base_path": "/micro"
+  },
   "customer": {
     "host": "lightblue-customer-igarcia.mybluemix.net",
     "base_path": "/micro"

@@ -1,4 +1,3 @@
-/*eslint-disable unknown-require, no-unused-vars*/
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
