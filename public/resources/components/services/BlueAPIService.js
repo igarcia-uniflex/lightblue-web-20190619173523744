@@ -2,7 +2,6 @@ app.service('BlueAPIService',['$http', 'CONFIG', function($http, CONFIG) {
     var invokeService = function(restUrl,
                 requestType, parameters, successCallback,
                 errorCallback) {
-console.log("Blue API");
         if (requestType == 'GET') {
             $http({
                 method: 'GET',
